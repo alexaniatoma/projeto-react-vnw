@@ -1,0 +1,38 @@
+.footer {
+    background-color:#0B0B0B;
+    color: #FFFFFF;
+    font-size: 0.5rem;
+    padding:2rem 6rem; 
+    line-height: 1.5rem; 
+    
+    .BoxFooter {
+        display: flex;
+        justify-content: space-between;
+        
+        .Logo{
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin-bottom: 0.5rem;
+           
+            img {
+                width: 1.5rem;            
+            }
+        }
+
+        .ContatoFooter { 
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+
+            img {
+                width: 1rem;            
+            }             
+        } 
+   } 
+
+   .Direitos {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

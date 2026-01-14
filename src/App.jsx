@@ -8,18 +8,19 @@ function App() {
   return (
     
     <>
-    <BrowserRouter>
-       <Header />
+      <BrowserRouter>
+        <Header />
+        <div className="min-h-[80vh]">
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/voluntario' element={<Voluntario />} />
 
-       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/voluntario' element={<Voluntario />} />
+          </Routes>
+        </div>
 
-       </Routes>
+        <Footer />
 
-       <Footer />
-
-    </BrowserRouter>    
+      </BrowserRouter>    
     </> 
   )
 }

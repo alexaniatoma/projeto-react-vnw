@@ -12,7 +12,7 @@ const Header = () => {
         </div>
             <nav>
                 <Link to='/'>Home</Link>
-                <Link to='../../pages/voluntario/Voluntario.jsx'>Seja Voluntário</Link>
+                <Link to='/voluntario'>Seja Voluntário</Link>
             </nav>
     </header>   
   )

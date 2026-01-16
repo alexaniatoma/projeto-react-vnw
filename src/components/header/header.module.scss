@@ -20,20 +20,15 @@
     }
 
     nav {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
+        ul {
+            display: flex;
+            align-items: center;
+             gap: 2rem;
+        }     
 
         a {            
             font-weight: 500;
-            color:#000;
-
-            &:nth-child(2) {
-                background-color: #00745A;
-                padding: 0.6rem 1.3rem;
-                border-radius: 8px;                
-                color: #fff;
-            }            
+            color:#000;                      
         }
     }
 }

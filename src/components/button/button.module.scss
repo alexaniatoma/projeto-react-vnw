@@ -1,0 +1,13 @@
+.btnVerde{
+    background-color: #00745A;
+    padding: 0.6rem 1.3rem;
+    border-radius: 8px;                
+    
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        color:#fff;
+        text-decoration: none;
+    }
+}  

@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import s from './header.module.scss'
 import Logo from '../../assets/logo.png'
+import Button from '../button/button.jsx'
 
 
 const Header = () => {
@@ -10,9 +11,15 @@ const Header = () => {
             <img src={Logo} alt= "Imagem do logo do site Médicos Voluntários" />
             <Link to='/'>Médicos & Dentistas</Link>
         </div>
-            <nav>
-                <Link to='/'>Home</Link>
-                <Link to='/voluntario'>Seja Voluntário</Link>
+            <nav className={s.nav}>
+              <ul>
+                <li>
+                  <NavLink to='/'>Home</NavLink>
+                </li>
+                <li>
+                  <Button text= 'Seja Voluntário' to='/voluntario'/>                  
+                </li>
+              </ul>           
             </nav>
     </header>   
   )

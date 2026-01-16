@@ -1,5 +1,5 @@
 import s from './voluntario.module.scss'
-import { Link } from 'react-router-dom'
+import Button from '../../components/button/button.jsx'
 
 const Voluntario = () => {
     return (
@@ -26,22 +26,22 @@ const Voluntario = () => {
             </section>
             <section className={ s.sectionFormulario }>
                 <section className={s.formularioConteudo}>                  
-                    <h2>Inscrição para Voluntários</h2>
-                    <h3>Dados Pessoais</h3>
+                    <h3>Inscrição para Voluntários</h3>
+                    <h4>Dados Pessoais</h4>
                     <form>
-                        <div>
+                        <div className= {s.formularioPessoal}>
                             <input type="text" placeholder="Seu nome *"/>  
                             <input type="email" placeholder="Seu email *"/>
                         </div>                        
-                            <input type="tel" placeholder="Seu telefone *"/> 
+                            <input type="tel" pattern= "[0-9]{3}-[0-9]{5}-[0-9]{4}" placeholder="Seu telefone *"/> 
                         <div className={s.areaMensagem}>
-                            <label>Mensagem Adicional</label>
-                            <input type="text" placeholder="Conte-nos porque você quer ser voluntário..."/>
+                            <h4>Mensagem Adicional</h4>
+                            <textarea name="messagem" rows="10" cols="142" placeholder="Conte-nos por que você quer ser um voluntário..."></textarea>
                         </div>                                                              
                     </form>
-                    <section>
+                    <section className={s.enviarInscricao}>
                         <p>Entraremos em contato para mais informações</p>
-                        <Link to="/" className={ s.btnInscricao }>Enviar Inscrição</Link>                         
+                         <Button text= 'Enviar Inscrição' to='/voluntario'/>                                                 
                     </section>                                         
                 </section>
             </section>                  

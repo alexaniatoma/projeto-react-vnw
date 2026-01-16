@@ -5,7 +5,6 @@ import Email from '../../assets/email-icon.png'
 import Telefone from '../../assets/telefone-icon.png'
 import Localizacao from '../../assets/localizacao-icon.png'
 
-
 const Footer = () => {
   return (
     <div className= { s.footer }>

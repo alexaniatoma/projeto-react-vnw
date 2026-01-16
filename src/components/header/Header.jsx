@@ -3,7 +3,6 @@ import s from './header.module.scss'
 import Logo from '../../assets/logo.png'
 import Button from '../button/button.jsx'
 
-
 const Header = () => {
   return (
     <header className={s.header}>

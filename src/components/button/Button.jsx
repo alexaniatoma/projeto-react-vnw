@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import s from './button.module.scss'
 
-
 const Button = ({text, to, onClick, type='button'}) => { 
     if(to) {
         return (

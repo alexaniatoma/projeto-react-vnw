@@ -139,3 +139,45 @@
          }
     }        
 }
+
+@media (max-width: 768px) {
+
+    .saudeBox{
+        text-align: center;
+     }
+    .section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        text-align: center;
+
+        .conteudo {
+            h1 {
+                font-size: 2rem;
+
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    }
+
+    .sectionMissao {
+        padding: 2rem 1rem;
+        text-align: center;
+
+        .boxCards {
+            flex-direction: column;
+        }
+    }
+
+    .sectionImpacto {
+        padding: 2rem 1rem;
+        text-align: center;
+
+        .boxCardsImpacto {
+            flex-direction: column;
+        }
+    }
+}

@@ -84,4 +84,36 @@
     text-align: center;
 }
     
+@media (max-width: 768px) {
+  .sectionCards {
+    flex-direction: column;
+    padding: 10px;
 
+    article {
+      width: 100%;
+    }
+  }
+
+  .sectionFormulario {
+    padding: 10px;
+  }
+
+  .formularioConteudo {
+    padding: 20px;
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    h4 {
+      font-size: 0.9rem;
+    }
+
+  .areaMensagem {
+      textarea {
+        max-width: 100%;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

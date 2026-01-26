@@ -20,7 +20,7 @@ const Footer = () => {
                 <h3>Contato</h3>
                 <div className= { s.ContatoFooter }>
                     <img src = {Email} alt= "Ícone de email" />
-                    <email>contato@medico-dentita.org</email>
+                    <email>contato@medico-dentista.org</email>
                 </div>
                 <div className= { s.ContatoFooter }>
                     <img src = {Telefone} alt= "Ícone de telefone" />

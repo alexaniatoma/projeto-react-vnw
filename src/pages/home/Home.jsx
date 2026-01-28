@@ -2,7 +2,7 @@ import s from './home.module.scss'
 import Saude from '../../assets/saude.png'  
 import Doutor from '../../assets/doutor.png'
 import { Link } from 'react-router-dom'
-import Button from '../../components/button/button.jsx'
+import Button from '../../components/button/Button.jsx'
 
 const Home = () => {
     return (

@@ -1,5 +1,5 @@
 import s from './voluntario.module.scss'
-import Button from '../../components/button/button.jsx'
+import Button from '../../components/button/Button.jsx'
 
 const Voluntario = () => {
     return (

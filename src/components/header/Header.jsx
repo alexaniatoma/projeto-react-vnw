@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import s from './header.module.scss'
 import Logo from '../../assets/logo.png'
+import HamburguerIcon from "../../assets/hamburguer.png"
 import Button from '../button/button.jsx'
 
 const Header = () => {
@@ -11,14 +12,18 @@ const Header = () => {
             <Link to='/'>Médicos & Dentistas</Link>
         </div>
             <nav className={s.nav}>
-              <ul>
-                <li>
+              <input type="checkbox" id="menuControl" className={s.menuControl}/>
+              <ul className= {s.menu}>
+                <li className={s.menuItems}>
                   <NavLink to='/'>Home</NavLink>
                 </li>
-                <li>
+                <li className={s.menuItems}>
                   <Button text= 'Seja Voluntário' to='/voluntario'/>                  
                 </li>
-              </ul>           
+              </ul> 
+              <label for="menuControl" className={s.hamburguerIcon}>
+                <img src={HamburguerIcon} alt="Ícone do menu hamburguer" />
+              </label>          
             </nav>
     </header>   
   )

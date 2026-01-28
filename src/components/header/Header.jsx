@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom'
 import s from './header.module.scss'
 import Logo from '../../assets/logo.png'
 import HamburguerIcon from "../../assets/hamburguer.png"
-import Button from '../button/button.jsx'
+import Button from '../button/Button.jsx'
 
 const Header = () => {
   return (
